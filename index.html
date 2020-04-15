@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      color: white;
+      font-size: 1.3rem;
+    }
+    .wraper{
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100vw;
+      height: 13vh;
+      position: absolute;
+    }
+    .navigation{
+      display: flex;
+    }
+    .logo{
+      width: 20vw;
+      height: auto;
+      text-align: center;
+      padding: 15px 0px;
+    }
+    .navi{
+      padding: 15px 0px;
+     
+    }
+    .navi ul{
+      display: flex;
+     
+    }
+    .navi ul li{
+      list-style: none;
+      margin: auto;
+    }
+    .navi ul li a{
+      text-decoration: none;
+      padding: 2px 15px;
+      color: white;
+    }.navi ul li a:hover{
+      background-color: white;
+      color: black;
+      border-radius: 7px;
+    }
+    .carosil{
+      position: relative;
+      z-index: -1;
+    }
+    .carousel-item{
+      height: 70vh;
+      width: 100vw;
+     
+    }
+    .about{
+      background-color: rgb(199, 199, 199);
+      width: 100vw;
+      height: 360px;
+      margin-top: 20px;
+      display: flex;
+      padding: 30px 10px;
+    }
+    .about h1{
+      text-align: center;
+      color: black;
+    }
+    .about p{
+      text-align: center;
+      font-size: 1.1rem;
+      color: black;
+    }
+    .section1{
+      align-items: center;
+    }
+    .service{
+      display: flex;
+      width: 100vw;
+      margin-top: 30px;
+      
+      
+    }
+    .head {
+      text-align: center;
+      color: black;
+      display: block;
+      margin-top: 30px;
+      border: 2px solid black;
+    }
+    .myservice{
+      width: 30vw;
+      border: 1px solid black;
+      margin: auto;
+      border-radius: 12px;
+      align-items: center;
+      background-color: rgb(229, 235, 231);
+      transition: 1s;
+
+    }
+    .myservice:hover{
+      transform: scale(1.1);
+    }
+    .myservice img{
+      width: 190px;
+      height: 130px;
+      display: block;
+      margin: auto;
+      padding-top: 9px;
+    }
+    .myservice h1 {
+      color: black;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    .myservice p {
+      color: black;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    .team{
+  display: flex;
+  width: 100vw;
+  margin-top: 30px;
+}
+.myteam{
+  display: block;
+  margin: auto;
+}
+.myteam h2{
+  color: black;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.myteam img{
+  height: 200px;
+  width: 150px;
+  transition: 1s;
+}
+.myteam img:hover{
+  transform: scale(1.4);
+}
+.contact{
+  display: flex;
+  background-color:gray;
+  width: 100vw;
+  height: 500px;
+  border: 2px solid black;
+}
+.left{
+  width: 50vw;
+  border: 1px solid white;
+}
+.left p{ font-size: 1.1rem;
+}
+.right form{
+ 
+}
+ 
+  </style>
+</head>
+<body>
+  <div class="wraper">
+    <div class="navigation">
+    <div class="logo"> LOGO</div>
+    <div class="navi">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">our team</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
+      
+    </div>
+   </div>
+  </div>
+  <div class="carosil">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="3.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+<div class="about">
+  <div class="section1">
+<h1>ABOUT ME</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nesciunt laboriosam, et facilis illum placeat sit deleniti rerum nulla soluta, culpa earum vero commodi, officia cum eum quidem quaerat inventore voluptatem dolore iusto debitis hic sapiente maiores! Sequi, distinctio maxime aperiam, enim dolor suscipit dolores deserunt quaerat, ducimus sapiente nam.</p>
+  </div>
+  <div class="section1">
+    <img src="me.jpg" alt=" my photo" style="height: 300px;">
+
+  </div>
+</div>
+<h1 class="head">services</h1>
+<section class="service">
+  
+  <div class="myservice">
+    <img src="dev.jpeg" alt="">
+    <h1>Web Development</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia accusamus harum veritatis a fuga blanditiis quae repellat. Beatae earum maxime quam dignissimos adipisci iusto repellat rem obcaecati temporibus quo?</p>
+  </div>
+  <div class="myservice">
+    <img src="design.jpg" alt="">
+    <h1>Web Design</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia accusamus harum veritatis a fuga blanditiis quae repellat. Beatae earum maxime quam dignissimos adipisci iusto repellat rem obcaecati temporibus quo?</p>
+  </div>
+  <div class="myservice">
+    <img src="back.png" alt="">
+    <h1>Back-end Development</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia accusamus harum veritatis a fuga blanditiis quae repellat. Beatae earum maxime quam dignissimos adipisci iusto repellat rem obcaecati temporibus quo?</p>
+  </div>
+  </section>
+  <h1 class="head">Our team</h1>
+<section class="team">
+  
+  <div class="myteam">
+    <h2>ceo</h2>
+    <img src="team1.jpg" alt="">
+  </div>
+  
+  <div class="myteam">
+    <h2>software engineer</h2>
+    <img src="team2.gif" alt="">
+  </div>
+  <div class="myteam">
+    <h2>team leader</h2>
+    <img src="team3.png" alt="">
+  </div> 
+  <div class="myteam">
+    <h2>web developer</h2>
+    <img src="team4.jpg" alt="">
+  </div> 
+  <div class="myteam">
+    <h2>intern</h2>
+    <img src="team5.jpg" alt="">
+  </div>
+</section>
+<h1 class="head">Contact us</h1>
+<div class="contact">
+  <div class="left">
+<h3>For more information contact us</h3>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, nesciunt?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nemo deserunt quaerat eveniet doloremque aut cupiditate corporis enim reprehenderit dolores?</p>
+  </div>
+  <div class="right">
+    <form action="">
+      <h1 class="head"> sign up</h1>
+      <label for="name">name :</label>
+      <input type="text"> <br>
+      <label for="email"> Email :</label>
+      <input type="email" name="email" id=""> <br>
+      <label for="password">Password</label>
+      <input type="password" name="password" id=""> <br>
+      <label for="date">Date of Birth</label>
+      <input type="date" name="date" id=""> <br>
+      <button type="submit">submit now</button>
+    </form>
+
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
